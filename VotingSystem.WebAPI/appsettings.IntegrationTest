@@ -1,0 +1,11 @@
+{
+  "ConnectionStrings": {
+    "Default": "DataSource=:memory:"
+  },
+  "JwtSettings": {
+    "SecretKey": "integration_test_secret_123!",
+    "Issuer": "https://localhost",
+    "Audience": "https://localhost",
+    "ExpiryMinutes": 60
+  }
+}

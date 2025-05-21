@@ -1,0 +1,75 @@
+.poll-details-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #1f2d3d;
+    min-height: 100vh;
+    color: #ecf0f1;
+}
+
+.poll-card {
+    background-color: #2c3e50;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+    .poll-card h2 {
+        margin-bottom: 1rem;
+        color: #ffffff;
+    }
+
+    .poll-card p {
+        margin: 0.5rem 0;
+        font-size: 1rem;
+    }
+
+.options-list {
+    margin-top: 1rem;
+    padding: 0;
+    list-style: none;
+}
+
+.option-item {
+    background-color: #34495e;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    font-weight: 500;
+}
+
+.voter-status {
+    margin-top: 2rem;
+    border-top: 1px solid #7f8c8d;
+    padding-top: 1.5rem;
+}
+
+    .voter-status h3 {
+        margin-bottom: 1rem;
+    }
+
+    .voter-status ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .voter-status li {
+        background-color: #34495e;
+        padding: 0.5rem;
+        border-radius: 6px;
+        margin-bottom: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+.voted {
+    color: #2ecc71;
+}
+
+.not-voted {
+    color: #e74c3c;
+}

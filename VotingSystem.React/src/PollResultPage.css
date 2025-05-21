@@ -1,0 +1,88 @@
+.container {
+    max-width: 600px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.result-option {
+    width: 100%;
+    max-width: 400px;
+}
+
+.option-text {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.vote-count {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.25rem;
+}
+
+.progress-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.progress-bar {
+    width: 300px; /* fix szélesség */
+    background-color: #e5e5e5;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 24px;
+    position: relative;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #007bff;
+    text-align: right;
+    font-size: 0.9rem;
+    line-height: 24px;
+    border-radius: 10px 0 0 10px;
+    padding-right: 0.5rem;
+    color: white;
+    min-width: 0;
+}
+
+.percentage-text {
+    font-weight: 500;
+    text-align: center;
+}
+
+
+.back-button {
+    margin-top: 2.5rem;
+    background-color: #007bff;
+    color: white;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+    .back-button:hover {
+        background-color: #0056b3;
+    }

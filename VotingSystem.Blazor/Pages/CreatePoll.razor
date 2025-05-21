@@ -1,0 +1,120 @@
+﻿@page "/polls/create"
+
+@using VotingSystem.Blazor.ViewModels
+@using VotingSystem.Blazor.Services
+@using VotingSystem.Blazor.Components
+@inject IPollService PollService
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JS
+
+<RedirectToLoginIfUnauthorized />
+
+<div class="createpoll-page">
+<h1>Create new poll</h1>
+
+<EditForm EditContext="_editContext" OnSubmit="HandleCreatePoll">
+    <div class="form-wrapper">
+    <DataAnnotationsValidator />
+    <ValidationSummary data-testid="validation-summary"/>
+
+    <div class="form-group">
+        <label>Question:</label>
+        <InputText @bind-Value="_model.Question" data-testid="question-input"/>
+    </div>
+
+    <div class="form-group">
+        <label>Start date:</label>
+        <InputDate @bind-Value="_model.StartDate" data-testid="start-date" />
+    </div>
+
+    <div class="form-group">
+        <label>End date:</label>
+        <InputDate @bind-Value="_model.EndDate" data-testid="end-date"/>
+    </div>
+
+    <h4 class="options-header">Options:</h4>
+    @foreach (var option in _model.Options)
+    {
+        <div class="form-group">
+                    <InputText @bind-Value="option.Text" @key="option.Id" data-testid="option-input" />
+        </div>
+    }
+    <button type="button" class="option-button" data-testid="add-option" @onclick="AddOption">+ New option</button>
+
+    <div class="form-actions">
+                <button type="submit" class="submit-btn" data-testid="submit">Submit</button>
+    </div>
+    </div>
+</EditForm>
+</div>
+
+@code {
+    private CreatePollViewModel _model = new();
+    private EditContext? _editContext;
+    private ValidationMessageStore? _messages;
+
+    protected override void OnInitialized()
+    {
+        _editContext = new EditContext(_model);
+        _messages = new ValidationMessageStore(_editContext);
+        if (_model.Options == null || _model.Options.Count < 2)
+        {
+            _model.Options = new List<PollOptionViewModel>
+        {
+            new PollOptionViewModel(),
+            new PollOptionViewModel()
+        };
+        }
+    }
+
+    private async Task HandleCreatePoll()
+    {
+        if (_messages is null || _editContext is null)
+            return;
+
+        _model.Options = _model.Options
+            .Where(o => !string.IsNullOrWhiteSpace(o.Text))
+            .ToList();
+        Console.WriteLine(_model.Options.Count);
+
+        _messages.Clear();
+        _editContext.NotifyValidationStateChanged();
+
+        if (_model.StartDate > _model.EndDate)
+        {
+            _messages.Add(() => _model.StartDate, "Start date must be before end date.");
+            _editContext.NotifyValidationStateChanged();
+        }
+
+        if (_model.Options.Count < 2)
+        {
+            _messages.Add(new FieldIdentifier(_model, "Options"), "At least two non-empty options are required.");
+            _editContext.NotifyValidationStateChanged();
+        }
+
+        bool hasError = !_editContext.Validate();
+        if (!hasError)
+        {
+            try
+            {
+                await PollService.CreatePollAsync(_model);
+                NavigationManager.NavigateTo("/polls");
+            }
+            catch (UnauthorizedAccessException)
+            {
+                await JS.InvokeVoidAsync("alert", "Session expired. Please login again.");
+                NavigationManager.NavigateTo("/login", forceLoad: true);
+            }
+            catch (HttpRequestException)
+            {
+                await JS.InvokeVoidAsync("alert", "Unexpected error while creating the poll.");
+            }
+            
+        }
+    }
+
+    private void AddOption()
+    {
+        _model.Options.Add(new PollOptionViewModel());
+    }
+}

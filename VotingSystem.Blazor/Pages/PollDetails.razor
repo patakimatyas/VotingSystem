@@ -1,0 +1,56 @@
+﻿@page "/polls/{PollId}"
+@using VotingSystem.Blazor.ViewModels
+@using VotingSystem.Blazor.Services
+@inject IPollService PollService
+
+<div class="poll-details-page">
+    @if (_poll is not null)
+    {
+        <div class="poll-card">
+            <h2>@_poll.Question</h2>
+
+            <p><strong>Start:</strong> @_poll.StartDate.ToShortDateString()</p>
+            <p><strong>End:</strong> @_poll.EndDate.ToShortDateString()</p>
+
+            <h4>Options</h4>
+            <ul class="options-list">
+                @foreach (var option in _poll.Options)
+                {
+                    <li class="option-item">
+                        <strong>@option.Text</strong> – @option.VoteCount vote(s)
+                    </li>
+                }
+            </ul>
+
+            <div class="voter-status">
+                <h3>Voters</h3>
+                <ul>
+                    @foreach (var voter in _poll.Voters)
+                    {
+                        <li class="@((voter.HasVoted ? "voted" : "not-voted"))">
+                            <span>@voter.Email</span>
+                            <span>@(voter.HasVoted ? "Voted" : "Not Voted")</span>
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div>
+    }
+    else
+    {
+        <p>Loading poll...</p>
+    }
+</div>
+
+@code {
+    [Parameter] public string? PollId { get; set; }
+    private PollDetailsViewModel? _poll;
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (!string.IsNullOrWhiteSpace(PollId))
+        {
+            _poll = await PollService.GetPollAsync(PollId);
+        }
+    }
+}

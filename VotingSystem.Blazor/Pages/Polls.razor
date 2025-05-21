@@ -1,0 +1,62 @@
+﻿@page "/polls"
+@using VotingSystem.Blazor.Services
+@using VotingSystem.Blazor.ViewModels
+@using VotingSystem.Blazor.Components
+@using System.Net
+@inject IPollService PollService
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JS
+
+
+<RedirectToLoginIfUnauthorized />
+<div class="mypolls-page">
+<h1 class="polls-title">My Polls</h1>
+
+@if (_polls == null)
+{
+    <p>Loading...</p>
+}
+else if (!_polls.Any())
+{
+    <p>You have not created any polls yet.</p>
+}
+else
+{
+    <ul class="polls-list">
+        @foreach (var poll in _polls)
+        {
+            <li class="poll-card" @onclick="() => NavigateToPoll(poll.Id)">
+                <h3>@poll.Question</h3>
+                <p><strong>Start date:</strong> @poll.StartDate.ToString("yyyy. MM. dd.")</p>
+                <p><strong>End date:</strong> @poll.EndDate.ToString("yyyy. MM. dd.")</p>
+            </li>
+        }
+    </ul>
+}
+</div>
+
+@code {
+    private List<PollViewModel>? _polls;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            _polls = await PollService.GetMyPollsAsync();
+        }
+        catch (UnauthorizedAccessException)
+        {
+            await JS.InvokeVoidAsync("alert", "Session expired. Please login again.");
+            NavigationManager.NavigateTo("/login", forceLoad: true);
+        }
+        catch (HttpRequestException)
+        {
+            await JS.InvokeVoidAsync("alert", "Unexpected error.");
+        }
+    }
+
+    private void NavigateToPoll(int pollId)
+    {
+        NavigationManager.NavigateTo($"/polls/{pollId}");
+    }
+}

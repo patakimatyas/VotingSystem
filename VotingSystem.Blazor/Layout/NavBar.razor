@@ -1,0 +1,31 @@
+﻿@using VotingSystem.Blazor.Services;
+@using Blazored.LocalStorage;
+@inject ILocalStorageService LocalStorage
+@inject NavigationManager NavigationManager
+@inject IAuthService AuthService
+
+<nav>
+    <a href="/" >Home</a>
+    <a href="/polls" >My Polls</a>
+    <a href="/polls/create">Create Poll</a>
+
+    @if (IsLoggedIn)
+    {
+        <button @onclick="Logout" >Logout</button>
+    }
+</nav>
+
+@code {
+    private bool IsLoggedIn;
+
+    protected override async Task OnInitializedAsync()
+    {
+        IsLoggedIn = !string.IsNullOrWhiteSpace(await LocalStorage.GetItemAsStringAsync("AuthToken"));
+    }
+
+    private async Task Logout()
+    {
+        await AuthService.LogoutAsync();
+        NavigationManager.NavigateTo("/login", forceLoad: true);
+    }
+}

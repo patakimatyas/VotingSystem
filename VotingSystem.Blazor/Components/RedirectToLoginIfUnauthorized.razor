@@ -1,0 +1,15 @@
+﻿@namespace VotingSystem.Blazor.Components
+@using Blazored.LocalStorage
+@inject ILocalStorageService LocalStorage
+@inject NavigationManager NavigationManager
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        var token = await LocalStorage.GetItemAsStringAsync("AuthToken");
+        if (string.IsNullOrWhiteSpace(token))
+        {
+            NavigationManager.NavigateTo("/login", forceLoad: true);
+        }
+    }
+}
