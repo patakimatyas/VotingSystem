@@ -41,7 +41,7 @@ Developed as a university project for “Modern webalkalmazások fejlesztése .N
 
 1. **Clone the repository:**
     ```sh
-    git clone https://github.com/yourusername/VotingSystem.git
+    git clone https://github.com/patakimatyas/VotingSystem.git
     cd VotingSystem
     ```
 
