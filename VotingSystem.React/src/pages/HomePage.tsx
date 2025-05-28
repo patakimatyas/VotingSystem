@@ -18,11 +18,11 @@ export default function HomePage() {
     }, []);
 
     return (
-        <>
+        <div className="active-polls-page">
             <h1>Active polls</h1>
             <ul>
                 {polls.map((poll) => (
-                    <li key={poll.id}>
+                    <li key={poll.id} className="active-cards">
                         <Link to={`/polls/${poll.id}`} className="poll-link">
                             <h3>
                                 {poll.question}
@@ -34,6 +34,6 @@ export default function HomePage() {
                     </li>
                 ))}
             </ul>
-        </>
+        </div>
     );
 }

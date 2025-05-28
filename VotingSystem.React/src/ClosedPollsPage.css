@@ -1,6 +1,5 @@
 .closed-polls-page {
-    max-width: 800px;
-    padding: 2rem;
+    width: 100%;
     text-align: center;
 }
 
@@ -46,6 +45,7 @@ ul {
 }
 
 .poll-card-closed {
+    width: 100%;
     background: #f9f9f9;
     padding: 1rem 1.5rem;
     margin-bottom: 1.5rem;

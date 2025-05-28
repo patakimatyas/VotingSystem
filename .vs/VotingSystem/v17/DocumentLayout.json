@@ -79,10 +79,6 @@
       "RelativeMoniker": "D:0:0:{D238FE3C-5AEC-E218-CE6B-0733B12DCF5D}|VotingSystem.DataAccess\\VotingSystem.DataAccess.csproj|solutionrelative:votingsystem.dataaccess\\services\\voteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.DataAccess\\Migrations\\20250521182006_AddVoterTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:VotingSystem.DataAccess\\Migrations\\20250521182006_AddVoterTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D238FE3C-5AEC-E218-CE6B-0733B12DCF5D}|VotingSystem.DataAccess\\VotingSystem.DataAccess.csproj|c:\\uni\\4\\modern .net\\votingsystem\\votingsystem.dataaccess\\models\\voter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D238FE3C-5AEC-E218-CE6B-0733B12DCF5D}|VotingSystem.DataAccess\\VotingSystem.DataAccess.csproj|solutionrelative:votingsystem.dataaccess\\models\\voter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -451,6 +447,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.DataAcces\\Config\\JwtSettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:VotingSystem.DataAcces\\Config\\JwtSettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D238FE3C-5AEC-E218-CE6B-0733B12DCF5D}|VotingSystem.DataAccess\\VotingSystem.DataAccess.csproj|c:\\uni\\4\\modern .net\\votingsystem\\votingsystem.dataaccess\\migrations\\20250521182006_addvotertable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D238FE3C-5AEC-E218-CE6B-0733B12DCF5D}|VotingSystem.DataAccess\\VotingSystem.DataAccess.csproj|solutionrelative:votingsystem.dataaccess\\migrations\\20250521182006_addvotertable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -464,7 +464,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 37,
               "Title": "app.css",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.Blazor\\wwwroot\\css\\app.css",
               "RelativeDocumentMoniker": "VotingSystem.Blazor\\wwwroot\\css\\app.css",
@@ -485,8 +485,7 @@
               "RelativeToolTip": "VotingSystem.WebAPI\\Controllers\\PollsController.cs",
               "ViewState": "AgIAACoAAAAAAAAAAAAAAC0AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T18:18:20.588Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T18:18:20.588Z"
             },
             {
               "$type": "Document",
@@ -498,8 +497,7 @@
               "RelativeToolTip": "VotingSystem.Blazor\\Services\\PollService.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T10:45:07.18Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T10:45:07.18Z"
             },
             {
               "$type": "Document",
@@ -511,8 +509,7 @@
               "RelativeToolTip": "VotingSystem.DataAccess\\Services\\PollService.cs",
               "ViewState": "AgIAADYAAAAAAAAAAAAAAEMAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T10:29:59.135Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T10:29:59.135Z"
             },
             {
               "$type": "Document",
@@ -524,8 +521,7 @@
               "RelativeToolTip": "VotingSystem.WebAPI\\Infrastructure\\WebApiMappingProfile.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAcwBAAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T16:00:37.975Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T16:00:37.975Z"
             },
             {
               "$type": "Document",
@@ -537,8 +533,7 @@
               "RelativeToolTip": "VotingSystem.Tests\\ControllerTests\\PollsControllerTest.cs",
               "ViewState": "AgIAALAAAAAAAAAAAAAcwLwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T11:18:50.375Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T11:18:50.375Z"
             },
             {
               "$type": "Document",
@@ -548,7 +543,7 @@
               "RelativeDocumentMoniker": "VotingSystem.DataAccess\\DbInitializer.cs",
               "ToolTip": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.DataAccess\\DbInitializer.cs",
               "RelativeToolTip": "VotingSystem.DataAccess\\DbInitializer.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAowBQAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAowB0AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-20T08:37:24.444Z",
               "EditorCaption": ""
@@ -563,8 +558,7 @@
               "RelativeToolTip": "VotingSystem.Blazor\\ViewModels\\PollDetailsViewModel.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T15:10:41.036Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-10T15:10:41.036Z"
             },
             {
               "$type": "Document",
@@ -576,8 +570,7 @@
               "RelativeToolTip": "VotingSystem.Shared\\DTOs\\PollResponseDTO.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T16:58:36.225Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T16:58:36.225Z"
             },
             {
               "$type": "Document",
@@ -589,8 +582,7 @@
               "RelativeToolTip": "VotingSystem.Shared\\DTOs\\VoterStatusDTO.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T14:09:00.358Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-10T14:09:00.358Z"
             },
             {
               "$type": "Document",
@@ -602,8 +594,7 @@
               "RelativeToolTip": "VotingSystem.Shared\\DTOs\\VoteRequestDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T13:42:15.028Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-28T13:42:15.028Z"
             },
             {
               "$type": "Document",
@@ -615,8 +606,7 @@
               "RelativeToolTip": "VotingSystem.Shared\\DTOs\\OptionResponseDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T17:01:02.686Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-12T17:01:02.686Z"
             },
             {
               "$type": "Document",
@@ -628,8 +618,7 @@
               "RelativeToolTip": "VotingSystem.Shared\\DTOs\\PollRequestDTO.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T17:13:35.407Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-12T17:13:35.407Z"
             },
             {
               "$type": "Document",
@@ -641,8 +630,7 @@
               "RelativeToolTip": "VotingSystem.Blazor\\ViewModels\\PollOptionViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T13:36:17.325Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-04T13:36:17.325Z"
             },
             {
               "$type": "Document",
@@ -654,8 +642,7 @@
               "RelativeToolTip": "VotingSystem.Blazor\\Pages\\PollDetails.razor",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAACkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-10T15:30:24.065Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-10T15:30:24.065Z"
             },
             {
               "$type": "Document",
@@ -667,8 +654,7 @@
               "RelativeToolTip": "VotingSystem.Tests\\UnitTests\\VoteServiceTest.cs",
               "ViewState": "AgIAAFoAAAAAAAAAAAAgwG4AAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T10:47:04.567Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T10:47:04.567Z"
             },
             {
               "$type": "Document",
@@ -680,8 +666,7 @@
               "RelativeToolTip": "VotingSystem.Tests\\ControllerTests\\VotesControllerTest.cs",
               "ViewState": "AgIAAEIAAAAAAAAAAAAgwFAAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T13:55:42.122Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T13:55:42.122Z"
             },
             {
               "$type": "Document",
@@ -693,8 +678,7 @@
               "RelativeToolTip": "VotingSystem.WebAPI\\Controllers\\VotesController.cs",
               "ViewState": "AgIAAB8AAAAAAAAAAAAwwCoAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T18:16:08.432Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-28T18:16:08.432Z"
             },
             {
               "$type": "Document",
@@ -706,8 +690,7 @@
               "RelativeToolTip": "VotingSystem.DataAccess\\Services\\IVoteService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T17:28:26.101Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-21T17:28:26.101Z"
             },
             {
               "$type": "Document",
@@ -719,12 +702,11 @@
               "RelativeToolTip": "VotingSystem.DataAccess\\Services\\VoteService.cs",
               "ViewState": "AgIAACgAAAAAAAAAAIAwwD4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T20:13:38.852Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T20:13:38.852Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 112,
               "Title": "20250521182006_AddVoterTable.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.DataAccess\\Migrations\\20250521182006_AddVoterTable.cs",
               "RelativeDocumentMoniker": "VotingSystem.DataAccess\\Migrations\\20250521182006_AddVoterTable.cs",
@@ -732,12 +714,11 @@
               "RelativeToolTip": "VotingSystem.DataAccess\\Migrations\\20250521182006_AddVoterTable.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T18:20:07.19Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-21T18:20:07.19Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 20,
               "Title": "Poll.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.DataAccess\\Models\\Poll.cs",
               "RelativeDocumentMoniker": "VotingSystem.DataAccess\\Models\\Poll.cs",
@@ -745,12 +726,11 @@
               "RelativeToolTip": "VotingSystem.DataAccess\\Models\\Poll.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAABQAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T08:17:59.05Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T08:17:59.05Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 19,
               "Title": "Voter.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.DataAccess\\Models\\Voter.cs",
               "RelativeDocumentMoniker": "VotingSystem.DataAccess\\Models\\Voter.cs",
@@ -758,12 +738,11 @@
               "RelativeToolTip": "VotingSystem.DataAccess\\Models\\Voter.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T17:54:00.215Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-21T17:54:00.215Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 21,
               "Title": "VotingSystemDbContext.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.DataAccess\\VotingSystemDbContext.cs",
               "RelativeDocumentMoniker": "VotingSystem.DataAccess\\VotingSystemDbContext.cs",
@@ -771,12 +750,11 @@
               "RelativeToolTip": "VotingSystem.DataAccess\\VotingSystemDbContext.cs",
               "ViewState": "AgIAADYAAAAAAAAAAAAYwDUAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T08:43:39.597Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T08:43:39.597Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 22,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.DataAccess\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "VotingSystem.DataAccess\\DependencyInjection.cs",
@@ -784,12 +762,11 @@
               "RelativeToolTip": "VotingSystem.DataAccess\\DependencyInjection.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T08:37:40.462Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T08:37:40.462Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 23,
               "Title": "ApplicationUser.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.DataAccess\\Models\\ApplicationUser.cs",
               "RelativeDocumentMoniker": "VotingSystem.DataAccess\\Models\\ApplicationUser.cs",
@@ -797,12 +774,11 @@
               "RelativeToolTip": "VotingSystem.DataAccess\\Models\\ApplicationUser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T17:49:08.315Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-21T17:49:08.315Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 25,
               "Title": "UsersController.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.WebAPI\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "VotingSystem.WebAPI\\Controllers\\UsersController.cs",
@@ -810,12 +786,11 @@
               "RelativeToolTip": "VotingSystem.WebAPI\\Controllers\\UsersController.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAAACIAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T15:34:18.363Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-14T15:34:18.363Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 26,
               "Title": "VotesControllerIntegrationTest.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.Tests\\IntegrationTests\\VotesControllerIntegrationTest.cs",
               "RelativeDocumentMoniker": "VotingSystem.Tests\\IntegrationTests\\VotesControllerIntegrationTest.cs",
@@ -823,12 +798,11 @@
               "RelativeToolTip": "VotingSystem.Tests\\IntegrationTests\\VotesControllerIntegrationTest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAIgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T22:09:44.747Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T22:09:44.747Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 24,
               "Title": "Vote.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.DataAccess\\Models\\Vote.cs",
               "RelativeDocumentMoniker": "VotingSystem.DataAccess\\Models\\Vote.cs",
@@ -836,12 +810,11 @@
               "RelativeToolTip": "VotingSystem.DataAccess\\Models\\Vote.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T08:18:41.992Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T08:18:41.992Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 29,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.WebAPI\\appsettings.json",
               "RelativeDocumentMoniker": "VotingSystem.WebAPI\\appsettings.json",
@@ -853,7 +826,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 27,
               "Title": "PollServiceTest.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.Tests\\UnitTests\\PollServiceTest.cs",
               "RelativeDocumentMoniker": "VotingSystem.Tests\\UnitTests\\PollServiceTest.cs",
@@ -865,7 +838,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 30,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.WebAPI\\appsettings.Development.json",
               "RelativeDocumentMoniker": "VotingSystem.WebAPI\\appsettings.Development.json",
@@ -877,7 +850,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 31,
               "Title": "appsettings.IntegrationTest.json",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.WebAPI\\appsettings.IntegrationTest.json",
               "RelativeDocumentMoniker": "VotingSystem.WebAPI\\appsettings.IntegrationTest.json",
@@ -889,7 +862,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 32,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.Blazor\\Program.cs",
               "RelativeDocumentMoniker": "VotingSystem.Blazor\\Program.cs",
@@ -901,7 +874,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 28,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.WebAPI\\Program.cs",
               "RelativeDocumentMoniker": "VotingSystem.WebAPI\\Program.cs",
@@ -913,7 +886,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 33,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.DataAccess\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "VotingSystem.DataAccess\\Services\\UserService.cs",
@@ -925,7 +898,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 34,
               "Title": "WebApiDependencyInjection.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.WebAPI\\Infrastructure\\WebApiDependencyInjection.cs",
               "RelativeDocumentMoniker": "VotingSystem.WebAPI\\Infrastructure\\WebApiDependencyInjection.cs",
@@ -937,7 +910,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 35,
               "Title": "VotingSystem.WebAPI.http",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.WebAPI\\VotingSystem.WebAPI.http",
               "RelativeDocumentMoniker": "VotingSystem.WebAPI\\VotingSystem.WebAPI.http",
@@ -949,7 +922,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 36,
               "Title": "Option.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.DataAccess\\Models\\Option.cs",
               "RelativeDocumentMoniker": "VotingSystem.DataAccess\\Models\\Option.cs",
@@ -961,7 +934,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 39,
               "Title": "VotingSystem.DataAccess.csproj",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.DataAccess\\VotingSystem.DataAccess.csproj",
               "RelativeDocumentMoniker": "VotingSystem.DataAccess\\VotingSystem.DataAccess.csproj",
@@ -973,7 +946,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 48,
               "Title": "package.json",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.React\\package.json",
               "RelativeDocumentMoniker": "VotingSystem.React\\package.json",
@@ -985,7 +958,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 47,
               "Title": "README.md",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.React\\README.md",
               "RelativeDocumentMoniker": "VotingSystem.React\\README.md",
@@ -997,7 +970,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 41,
               "Title": "VotingSystem.Blazor.csproj",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.Blazor\\VotingSystem.Blazor.csproj",
               "RelativeDocumentMoniker": "VotingSystem.Blazor\\VotingSystem.Blazor.csproj",
@@ -1009,7 +982,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 38,
               "Title": "Polls.razor",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.Blazor\\Pages\\Polls.razor",
               "RelativeDocumentMoniker": "VotingSystem.Blazor\\Pages\\Polls.razor",
@@ -1021,7 +994,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 40,
               "Title": "Microsoft.NET.Sdk.FrameworkReferenceResolution.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.204\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.204\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets",
@@ -1033,7 +1006,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 46,
               "Title": "tsconfig.app.json",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.React\\tsconfig.app.json",
               "RelativeDocumentMoniker": "VotingSystem.React\\tsconfig.app.json",
@@ -1045,7 +1018,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 42,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
@@ -1057,7 +1030,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 45,
               "Title": "tsconfig.json",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.React\\tsconfig.json",
               "RelativeDocumentMoniker": "VotingSystem.React\\tsconfig.json",
@@ -1069,7 +1042,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 44,
               "Title": "tsconfig.node.json",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.React\\tsconfig.node.json",
               "RelativeDocumentMoniker": "VotingSystem.React\\tsconfig.node.json",
@@ -1081,7 +1054,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 43,
               "Title": "Web.config",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.React\\Web.config",
               "RelativeDocumentMoniker": "VotingSystem.React\\Web.config",
@@ -1093,7 +1066,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 49,
               "Title": "index.html",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.React\\index.html",
               "RelativeDocumentMoniker": "VotingSystem.React\\index.html",
@@ -1105,7 +1078,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 50,
               "Title": "eslint.config.js",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.React\\eslint.config.js",
               "RelativeDocumentMoniker": "VotingSystem.React\\eslint.config.js",
@@ -1117,7 +1090,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 51,
               "Title": ".gitignore",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.React\\.gitignore",
               "RelativeDocumentMoniker": "VotingSystem.React\\.gitignore",
@@ -1129,7 +1102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 52,
               "Title": ".env",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.React\\.env",
               "RelativeDocumentMoniker": "VotingSystem.React\\.env",
@@ -1141,7 +1114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 54,
               "Title": "CreatePollComponentTest.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.Blazor.Tests\\ComponentTests\\CreatePollComponentTest.cs",
               "RelativeDocumentMoniker": "VotingSystem.Blazor.Tests\\ComponentTests\\CreatePollComponentTest.cs",
@@ -1153,7 +1126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 57,
               "Title": "LoginComponentTest.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.Blazor.Tests\\ComponentTests\\LoginComponentTest.cs",
               "RelativeDocumentMoniker": "VotingSystem.Blazor.Tests\\ComponentTests\\LoginComponentTest.cs",
@@ -1165,7 +1138,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 55,
               "Title": "CreatePoll.razor",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.Blazor\\Pages\\CreatePoll.razor",
               "RelativeDocumentMoniker": "VotingSystem.Blazor\\Pages\\CreatePoll.razor",
@@ -1177,7 +1150,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 53,
               "Title": "VotingSystem.Tests.csproj",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.Tests\\VotingSystem.Tests.csproj",
               "RelativeDocumentMoniker": "VotingSystem.Tests\\VotingSystem.Tests.csproj",
@@ -1189,7 +1162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 56,
               "Title": "RedirectToLoginIfUnauthorized.razor",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.Blazor\\Components\\RedirectToLoginIfUnauthorized.razor",
               "RelativeDocumentMoniker": "VotingSystem.Blazor\\Components\\RedirectToLoginIfUnauthorized.razor",
@@ -1201,7 +1174,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 59,
               "Title": "Login.razor",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.Blazor\\Pages\\Login.razor",
               "RelativeDocumentMoniker": "VotingSystem.Blazor\\Pages\\Login.razor",
@@ -1213,7 +1186,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 58,
               "Title": "CreatePollViewModel.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.Blazor\\ViewModels\\CreatePollViewModel.cs",
               "RelativeDocumentMoniker": "VotingSystem.Blazor\\ViewModels\\CreatePollViewModel.cs",
@@ -1225,7 +1198,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 60,
               "Title": "PollDetailsComponentTest.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.Blazor.Tests\\ComponentTests\\PollDetailsComponentTest.cs",
               "RelativeDocumentMoniker": "VotingSystem.Blazor.Tests\\ComponentTests\\PollDetailsComponentTest.cs",
@@ -1237,7 +1210,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 61,
               "Title": "PollViewModel.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.Blazor\\ViewModels\\PollViewModel.cs",
               "RelativeDocumentMoniker": "VotingSystem.Blazor\\ViewModels\\PollViewModel.cs",
@@ -1249,7 +1222,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 62,
               "Title": "PollsComponentTest.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.Blazor.Tests\\ComponentTests\\PollsComponentTest.cs",
               "RelativeDocumentMoniker": "VotingSystem.Blazor.Tests\\ComponentTests\\PollsComponentTest.cs",
@@ -1261,7 +1234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 63,
               "Title": "PollsControllerIntegrationTest.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.Tests\\IntegrationTests\\PollsControllerIntegrationTest.cs",
               "RelativeDocumentMoniker": "VotingSystem.Tests\\IntegrationTests\\PollsControllerIntegrationTest.cs",
@@ -1273,7 +1246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 95,
+              "DocumentIndex": 94,
               "Title": "PollService.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.DataAcces\\Services\\PollService.cs",
               "RelativeDocumentMoniker": "VotingSystem.DataAcces\\Services\\PollService.cs",
@@ -1284,7 +1257,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 64,
               "Title": "Polls.razor.css",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.Blazor\\Pages\\Polls.razor.css",
               "RelativeDocumentMoniker": "VotingSystem.Blazor\\Pages\\Polls.razor.css",
@@ -1296,7 +1269,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 65,
               "Title": "HttpRequestUtility.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.Blazor\\Infrastructure\\HttpRequestUtility.cs",
               "RelativeDocumentMoniker": "VotingSystem.Blazor\\Infrastructure\\HttpRequestUtility.cs",
@@ -1308,7 +1281,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 66,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.Blazor\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "VotingSystem.Blazor\\Services\\AuthService.cs",
@@ -1320,7 +1293,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 68,
               "Title": "UsersControllerTest.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.Tests\\ControllerTests\\UsersControllerTest.cs",
               "RelativeDocumentMoniker": "VotingSystem.Tests\\ControllerTests\\UsersControllerTest.cs",
@@ -1332,7 +1305,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 96,
+              "DocumentIndex": 95,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.DataAcces\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "VotingSystem.DataAcces\\Services\\UserService.cs",
@@ -1343,7 +1316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 67,
               "Title": "UserServiceTest.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.Tests\\UnitTests\\UserServiceTest.cs",
               "RelativeDocumentMoniker": "VotingSystem.Tests\\UnitTests\\UserServiceTest.cs",
@@ -1355,7 +1328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 69,
               "Title": "UsersControllerIntegrationTest.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.Tests\\IntegrationTests\\UsersControllerIntegrationTest.cs",
               "RelativeDocumentMoniker": "VotingSystem.Tests\\IntegrationTests\\UsersControllerIntegrationTest.cs",
@@ -1367,7 +1340,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 70,
               "Title": "UserRequestDTO.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.Shared\\DTOs\\UserRequestDTO.cs",
               "RelativeDocumentMoniker": "VotingSystem.Shared\\DTOs\\UserRequestDTO.cs",
@@ -1379,7 +1352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 94,
+              "DocumentIndex": 93,
               "Title": "VotingSystem.WebAPI.deps.json",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.WebAPI\\bin\\Debug\\net8.0\\VotingSystem.WebAPI.deps.json",
               "RelativeDocumentMoniker": "VotingSystem.WebAPI\\bin\\Debug\\net8.0\\VotingSystem.WebAPI.deps.json",
@@ -1391,7 +1364,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 71,
               "Title": "LoginRequestDTO.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.Shared\\DTOs\\LoginRequestDTO.cs",
               "RelativeDocumentMoniker": "VotingSystem.Shared\\DTOs\\LoginRequestDTO.cs",
@@ -1403,7 +1376,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 72,
               "Title": "VotingSystem.WebAPI.csproj",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.WebAPI\\VotingSystem.WebAPI.csproj",
               "RelativeDocumentMoniker": "VotingSystem.WebAPI\\VotingSystem.WebAPI.csproj",
@@ -1415,7 +1388,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 93,
+              "DocumentIndex": 92,
               "Title": "appsettings.IntegrationTest",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.WebAPI\\appsettings.IntegrationTest",
               "RelativeDocumentMoniker": "VotingSystem.WebAPI\\appsettings.IntegrationTest",
@@ -1427,7 +1400,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 73,
               "Title": "UserResponseDTO.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.Shared\\DTOs\\UserResponseDTO.cs",
               "RelativeDocumentMoniker": "VotingSystem.Shared\\DTOs\\UserResponseDTO.cs",
@@ -1439,7 +1412,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 74,
               "Title": "ClosedPollResponseDTO.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.Shared\\DTOs\\ClosedPollResponseDTO.cs",
               "RelativeDocumentMoniker": "VotingSystem.Shared\\DTOs\\ClosedPollResponseDTO.cs",
@@ -1451,7 +1424,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 75,
               "Title": "LoginResponseDTO.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.Shared\\DTOs\\LoginResponseDTO.cs",
               "RelativeDocumentMoniker": "VotingSystem.Shared\\DTOs\\LoginResponseDTO.cs",
@@ -1463,7 +1436,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 97,
+              "DocumentIndex": 96,
               "Title": "ApplicationUser.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.DataAcces\\Models\\ApplicationUser.cs",
               "RelativeDocumentMoniker": "VotingSystem.DataAcces\\Models\\ApplicationUser.cs",
@@ -1474,7 +1447,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 98,
+              "DocumentIndex": 97,
               "Title": "VoteService.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.DataAcces\\Services\\VoteService.cs",
               "RelativeDocumentMoniker": "VotingSystem.DataAcces\\Services\\VoteService.cs",
@@ -1485,7 +1458,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 99,
+              "DocumentIndex": 98,
               "Title": "Poll.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.DataAcces\\Models\\Poll.cs",
               "RelativeDocumentMoniker": "VotingSystem.DataAcces\\Models\\Poll.cs",
@@ -1496,7 +1469,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 100,
+              "DocumentIndex": 99,
               "Title": "IPollService.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.DataAcces\\Services\\IPollService.cs",
               "RelativeDocumentMoniker": "VotingSystem.DataAcces\\Services\\IPollService.cs",
@@ -1507,7 +1480,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 76,
               "Title": "CreatePoll.razor.css",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.Blazor\\Pages\\CreatePoll.razor.css",
               "RelativeDocumentMoniker": "VotingSystem.Blazor\\Pages\\CreatePoll.razor.css",
@@ -1519,7 +1492,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 78,
               "Title": "index.html",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.Blazor\\wwwroot\\index.html",
               "RelativeDocumentMoniker": "VotingSystem.Blazor\\wwwroot\\index.html",
@@ -1531,7 +1504,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 79,
               "Title": "App.razor",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.Blazor\\App.razor",
               "RelativeDocumentMoniker": "VotingSystem.Blazor\\App.razor",
@@ -1543,7 +1516,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 77,
               "Title": "Login.razor.css",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.Blazor\\Pages\\Login.razor.css",
               "RelativeDocumentMoniker": "VotingSystem.Blazor\\Pages\\Login.razor.css",
@@ -1555,7 +1528,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 81,
+              "DocumentIndex": 80,
               "Title": "PollDetails.razor.css",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.Blazor\\Pages\\PollDetails.razor.css",
               "RelativeDocumentMoniker": "VotingSystem.Blazor\\Pages\\PollDetails.razor.css",
@@ -1567,7 +1540,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 82,
+              "DocumentIndex": 81,
               "Title": "IPollService.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.Blazor\\Services\\IPollService.cs",
               "RelativeDocumentMoniker": "VotingSystem.Blazor\\Services\\IPollService.cs",
@@ -1579,7 +1552,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 84,
+              "DocumentIndex": 83,
               "Title": "BlazorMappingProfile.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.Blazor\\Infrastructure\\BlazorMappingProfile.cs",
               "RelativeDocumentMoniker": "VotingSystem.Blazor\\Infrastructure\\BlazorMappingProfile.cs",
@@ -1591,7 +1564,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 83,
+              "DocumentIndex": 82,
               "Title": "IHttpRequestUtility.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.Blazor\\Infrastructure\\IHttpRequestUtility.cs",
               "RelativeDocumentMoniker": "VotingSystem.Blazor\\Infrastructure\\IHttpRequestUtility.cs",
@@ -1603,7 +1576,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 101,
+              "DocumentIndex": 100,
               "Title": "IUserService.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.DataAcces\\Services\\IUserService.cs",
               "RelativeDocumentMoniker": "VotingSystem.DataAcces\\Services\\IUserService.cs",
@@ -1614,7 +1587,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 102,
+              "DocumentIndex": 101,
               "Title": "Vote.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.DataAcces\\Models\\Vote.cs",
               "RelativeDocumentMoniker": "VotingSystem.DataAcces\\Models\\Vote.cs",
@@ -1625,7 +1598,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 85,
+              "DocumentIndex": 84,
               "Title": "LoginViewModel.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.Blazor\\ViewModels\\LoginViewModel.cs",
               "RelativeDocumentMoniker": "VotingSystem.Blazor\\ViewModels\\LoginViewModel.cs",
@@ -1637,7 +1610,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 86,
+              "DocumentIndex": 85,
               "Title": "Navbar.razor.css",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.Blazor\\Layout\\Navbar.razor.css",
               "RelativeDocumentMoniker": "VotingSystem.Blazor\\Layout\\Navbar.razor.css",
@@ -1649,7 +1622,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 87,
+              "DocumentIndex": 86,
               "Title": "NavBar.razor",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.Blazor\\Layout\\NavBar.razor",
               "RelativeDocumentMoniker": "VotingSystem.Blazor\\Layout\\NavBar.razor",
@@ -1661,7 +1634,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 88,
+              "DocumentIndex": 87,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.Blazor\\Infrastructure\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "VotingSystem.Blazor\\Infrastructure\\DependencyInjection.cs",
@@ -1673,7 +1646,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 103,
+              "DocumentIndex": 102,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.DataAcces\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "VotingSystem.DataAcces\\DependencyInjection.cs",
@@ -1684,7 +1657,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 89,
+              "DocumentIndex": 88,
               "Title": "_Imports.razor",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.Blazor\\_Imports.razor",
               "RelativeDocumentMoniker": "VotingSystem.Blazor\\_Imports.razor",
@@ -1696,7 +1669,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 91,
+              "DocumentIndex": 90,
               "Title": "MainLayout.razor",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.Blazor\\Layout\\MainLayout.razor",
               "RelativeDocumentMoniker": "VotingSystem.Blazor\\Layout\\MainLayout.razor",
@@ -1708,7 +1681,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 90,
+              "DocumentIndex": 89,
               "Title": "MainLayout.razor.css",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.Blazor\\Layout\\MainLayout.razor.css",
               "RelativeDocumentMoniker": "VotingSystem.Blazor\\Layout\\MainLayout.razor.css",
@@ -1720,7 +1693,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 104,
+              "DocumentIndex": 103,
               "Title": "20250508171927_DbContextUpdated.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.DataAcces\\Migrations\\20250508171927_DbContextUpdated.cs",
               "RelativeDocumentMoniker": "VotingSystem.DataAcces\\Migrations\\20250508171927_DbContextUpdated.cs",
@@ -1731,7 +1704,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 105,
+              "DocumentIndex": 104,
               "Title": "VotingSystemDbContext.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.DataAcces\\VotingSystemDbContext.cs",
               "RelativeDocumentMoniker": "VotingSystem.DataAcces\\VotingSystemDbContext.cs",
@@ -1742,7 +1715,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 106,
+              "DocumentIndex": 105,
               "Title": "DbInitializer.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.DataAcces\\DbInitializer.cs",
               "RelativeDocumentMoniker": "VotingSystem.DataAcces\\DbInitializer.cs",
@@ -1753,7 +1726,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 92,
+              "DocumentIndex": 91,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.WebAPI\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "VotingSystem.WebAPI\\Properties\\launchSettings.json",
@@ -1765,7 +1738,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 107,
+              "DocumentIndex": 106,
               "Title": "20250504124436_UserIdToPolls.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.DataAcces\\Migrations\\20250504124436_UserIdToPolls.cs",
               "RelativeDocumentMoniker": "VotingSystem.DataAcces\\Migrations\\20250504124436_UserIdToPolls.cs",
@@ -1776,7 +1749,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 108,
+              "DocumentIndex": 107,
               "Title": "Option.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.DataAcces\\Models\\Option.cs",
               "RelativeDocumentMoniker": "VotingSystem.DataAcces\\Models\\Option.cs",
@@ -1787,7 +1760,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 109,
+              "DocumentIndex": 108,
               "Title": "IVoteService.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.DataAcces\\Services\\IVoteService.cs",
               "RelativeDocumentMoniker": "VotingSystem.DataAcces\\Services\\IVoteService.cs",
@@ -1798,7 +1771,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 110,
+              "DocumentIndex": 109,
               "Title": "20250428164311_VoteRelations.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.DataAcces\\Migrations\\20250428164311_VoteRelations.cs",
               "RelativeDocumentMoniker": "VotingSystem.DataAcces\\Migrations\\20250428164311_VoteRelations.cs",
@@ -1809,7 +1782,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 111,
+              "DocumentIndex": 110,
               "Title": "20250425084903_Init.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.DataAcces\\Migrations\\20250425084903_Init.cs",
               "RelativeDocumentMoniker": "VotingSystem.DataAcces\\Migrations\\20250425084903_Init.cs",
@@ -1820,7 +1793,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 112,
+              "DocumentIndex": 111,
               "Title": "JwtSettings.cs",
               "DocumentMoniker": "C:\\UNI\\4\\modern .net\\VotingSystem\\VotingSystem.DataAcces\\Config\\JwtSettings.cs",
               "RelativeDocumentMoniker": "VotingSystem.DataAcces\\Config\\JwtSettings.cs",
