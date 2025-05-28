@@ -28,7 +28,18 @@ Developed as a university project for “Modern webalkalmazások fejlesztése .N
 - **Version control:** Git, GitHub
 
 ---
+## Screenshots
+React:
+![image](https://github.com/user-attachments/assets/da3cff9a-16c6-4f84-acf9-2f91dc975db7)
+![image](https://github.com/user-attachments/assets/8e0cecda-3843-4a68-8249-ac4645a56a27)
+![image](https://github.com/user-attachments/assets/a40a9a75-8912-4684-9fbf-39707cd064da)
 
+Blazor:
+![image](https://github.com/user-attachments/assets/0a556a52-50f9-49bc-a553-debcc9453993)
+![image](https://github.com/user-attachments/assets/ded2aff0-6cdd-4cda-a69e-babe6827a733)
+![image](https://github.com/user-attachments/assets/c808bee5-fd27-42f4-a61f-6067ea95d1fb)
+
+---
 ## Getting Started
 
 ### Prerequisites
