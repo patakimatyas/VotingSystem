@@ -20,11 +20,13 @@ export default function Navbar() {
 
     return (
         <nav className="navbar">
-
+            
             <div className="nav-left">
+            <Link to="/" className="nav-link">Home</Link>
             <Link to="/polls/active" className="nav-link">Active</Link>
             <Link to="/polls/closed" className="nav-link">Closed</Link>
             </div>
+            
             <div className="nav-right">
                 {user ? (
                     <button className="logout-button" onClick={handleLogout}>Logout</button>

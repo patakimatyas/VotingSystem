@@ -1,39 +1,29 @@
-﻿import { useEffect, useState } from "react";
-import { getActivePolls } from "../api/client/polls-client";
-import type { PollResponseDto } from "../api/models/PollResponseDto";
-import { Link} from "react-router-dom";
 import '../HomePage.css';
+import { useNavigate } from "react-router-dom";
 
+export default function HomePage(){
+    const navigate = useNavigate();
+    const user = localStorage.getItem("user");
 
-export default function HomePage() {
-    const [polls, setPolls] = useState<PollResponseDto[]>([]);
-
-    useEffect(() => {
-        getActivePolls()
-            .then(polls => {
-                // console.log(polls);
-                setPolls(polls);
-            })
-            .catch(console.error);
-    }, []);
-
-    return (
-        <div className="active-polls-page">
-            <h1>Active polls</h1>
-            <ul>
-                {polls.map((poll) => (
-                    <li key={poll.id} className="active-cards">
-                        <Link to={`/polls/${poll.id}`} className="poll-link">
-                            <h3>
-                                {poll.question}
-                                {poll.hasVoted && <div className="votedmsg"> ✅ Voted</div>}
-                            </h3>
-                            <p>Start date: {new Date(poll.startDate).toLocaleDateString()}</p>
-                            <p>End date: {new Date(poll.endDate).toLocaleDateString()}</p>
-                        </Link>
-                    </li>
-                ))}
-            </ul>
+    return(
+        <div className="home-page">
+            <h1>Welcome to VotingSystem</h1>
+            <p>Vote on open polls or check out the outcome of closed ones</p>
+            <div className="admin-section">
+            <p>Navigate to the admin app if you want to create polls too</p> 
+            <button onClick={() => window.location.href = 'https://localhost:7044'} className="admin-page-btn">
+                VotingSystem.Admin
+            </button>
+            </div>
+            <div className='home-btn-group'>
+            {!user ? (
+                <><button onClick={() => navigate("/users/login")}>Login</button>
+                <button onClick={() => navigate("/users/register")}>Register</button></>
+            ):(
+                <><button onClick={() => navigate("/polls/active")}>Active</button>
+                <button onClick={() => navigate("/polls/closed")}>Closed</button></>
+            )}
+            </div>
         </div>
     );
-}
+}2

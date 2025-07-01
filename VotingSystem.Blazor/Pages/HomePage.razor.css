@@ -1,0 +1,64 @@
+.admin-home-page {
+    max-width: 500px;
+    text-align: center;
+    margin: auto;
+    padding: 2.5rem 1.5rem 2rem 1.5rem;
+    border-radius: 18px;
+}
+
+h1 {
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0.6rem;
+}
+
+.brand {
+    color: #3498db;
+}
+
+p {
+    color: white;
+    margin-bottom: 1.1rem;
+}
+
+.user-app-link {
+    color: #3498db;
+    font-weight: 600;
+    background: #fff;
+    padding: 0.3rem 1.1rem;
+    border-radius: 10px;
+    text-decoration: none;
+    border: 2px solid #007bff;
+    transition: background 0.16s, color 0.16s;
+}
+
+    .user-app-link:hover {
+        background: #3498db;
+        color: #fff;
+    }
+
+.admin-btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2.2rem;
+}
+
+.admin-btn {
+    background-color: #3498db;
+    color: #fff;
+    font-weight: 700;
+    padding: 0.9rem 2.2rem;
+    border-radius: 11px;
+    text-decoration: none;
+    border: none;
+    font-size: 1.08rem;
+    transition: background 0.18s;
+    box-shadow: 0 2px 6px rgba(30,144,255, 0.11);
+}
+
+    .admin-btn:hover {
+        background: #005fa3;
+        color: #fff;
+    }

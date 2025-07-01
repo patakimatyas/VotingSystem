@@ -1,4 +1,4 @@
-import HomePage from "./pages/HomePage";
+import ActivePollsPage from "./pages/ActivePollsPage";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import PollDetailsPage from "./pages/PollDetailsPage";
 import ClosedPollsPage from "./pages/ClosedPollsPage";
@@ -7,6 +7,7 @@ import RegisterPage from "./pages/RegisterPage";
 import LoginPage from "./pages/LoginPage";
 import ProtectedRoute from "./context/ProtectedRoute";
 import Navbar from "./components/Navbar";
+import HomePage from "./pages/HomePage";
 
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
         <BrowserRouter>
             <Navbar/>
             <Routes>
-                <Route path="/polls/active" element={<ProtectedRoute><HomePage /></ProtectedRoute>} />
+                <Route path="/" element={<HomePage/>}/>
+                <Route path="/polls/active" element={<ProtectedRoute><ActivePollsPage /></ProtectedRoute>} />
                 <Route path="/polls/closed" element={<ProtectedRoute><ClosedPollsPage /></ProtectedRoute>} />
                 <Route path="/polls/:id" element={<ProtectedRoute><PollDetailsPage /></ProtectedRoute>} />
                 <Route path="/polls/closed/:id" element={<ProtectedRoute><PollResultPage /></ProtectedRoute>} />

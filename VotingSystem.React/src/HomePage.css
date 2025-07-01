@@ -44,3 +44,33 @@ p {
 .votedmsg {
     color: #28a745;
 }
+
+.admin-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.admin-page-btn {
+  margin-top: 0.75rem;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  color: #007bff;
+}
+.admin-page-btn:hover{
+    background-color: #eef7ff;
+}
+
+.home-btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.home-btn-group button {
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}

@@ -1,0 +1,15 @@
+﻿@page "/"
+@using Microsoft.AspNetCore.Components
+
+<div class="admin-home-page">
+    <h1>Welcome to <span class="brand">VotingSystem.Admin</span></h1>
+    <p>Manage polls, review results, and oversee voting activity.</p>
+    <p>
+        Need to vote as a regular user?
+        <a class="user-app-link" href="http://localhost:5173" rel="noopener">Go to Voting App</a>
+    </p>
+    <div class="admin-btn-group">
+        <a href="/polls/create" class="admin-btn">Create Poll</a>
+        <a href="/polls/mine" class="admin-btn">My Polls</a>
+    </div>
+</div>

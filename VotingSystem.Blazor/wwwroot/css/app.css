@@ -1,7 +1,8 @@
-html, body {
+html, body, main {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     background-color: #1f2d3d; /* sötét háttér */
     color: #ecf0f1; /* világos szöveg */
+
 }
 p{
     color:white;
