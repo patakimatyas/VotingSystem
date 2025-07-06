@@ -10,13 +10,14 @@
             <h2>@_poll.Question</h2>
             @if (_poll.StartDate > DateTime.UtcNow)
             {
-                <a href=@($"/polls/update/{_poll.Id}")>Edit</a>
+                <a class="edit-link" href=@($"/polls/update/{_poll.Id}")>Edit</a>
             }
 
             <p><strong>Start:</strong> @_poll.StartDate.ToShortDateString()</p>
             <p><strong>End:</strong> @_poll.EndDate.ToShortDateString()</p>
 
-            <h4>Options</h4>
+            <div class="option">
+            <h3>Options</h3>
             <ul class="options-list">
                 @foreach (var option in _poll.Options)
                 {
@@ -25,9 +26,15 @@
                     </li>
                 }
             </ul>
-
+            </div>
             <div class="voter-status">
                 <h3>Voters</h3>
+                @if(_poll.StartDate > DateTime.UtcNow)
+                {
+                    <p>Voting has not started yet. Feel free to edit it.</p>
+                }
+                else
+                {
                 <ul>
                     @foreach (var voter in _poll.Voters)
                     {
@@ -37,6 +44,7 @@
                         </li>
                     }
                 </ul>
+                }
             </div>
         </div>
     }

@@ -19,13 +19,20 @@
 
     .poll-card h2 {
         margin-bottom: 1rem;
-        color: #ffffff;
+        color: #3498db;
+        font-weight: 700;
     }
 
     .poll-card p {
         margin: 0.5rem 0;
         font-size: 1rem;
     }
+
+.option {
+    margin-top: 2rem;
+    border-top: 1px solid #7f8c8d;
+    padding-top: 1.5rem;
+}
 
 .options-list {
     margin-top: 1rem;
@@ -41,6 +48,8 @@
     color: #ecf0f1;
     font-weight: 500;
 }
+
+
 
 .voter-status {
     margin-top: 2rem;
@@ -66,6 +75,10 @@
         justify-content: space-between;
     }
 
+    .voter-status p {
+        color: #2ecc71;
+    }
+
 .voted {
     color: #2ecc71;
 }
@@ -73,3 +86,22 @@
 .not-voted {
     color: #e74c3c;
 }
+
+.edit-link {
+    color: #fff;
+    background-color: #3498db;
+    font-weight: 600;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    transition: color 0.2s, box-shadow 0.2s;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+    .edit-link:hover, .edit-link:focus {
+        background-color: #005fa3;
+        box-shadow: 0 2px 8px 0 rgba(79,209,197,0.07);
+        outline: none;
+    }
+
