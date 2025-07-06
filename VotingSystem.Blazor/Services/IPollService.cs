@@ -8,5 +8,6 @@ namespace VotingSystem.Blazor.Services
         Task<List<PollViewModel>> GetMyPollsAsync();
         Task<PollDetailsViewModel?> GetPollAsync(string pollId);
         Task<bool> CreatePollAsync(CreatePollViewModel viewModel);
+        Task<bool> UpdatePollAsync(int id, CreatePollViewModel viewModel);
     }
 }

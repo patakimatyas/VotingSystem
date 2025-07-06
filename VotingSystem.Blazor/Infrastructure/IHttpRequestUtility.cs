@@ -6,6 +6,7 @@
         Task<T?> ExecutePostHttpRequestAsync<TIn, T>(string url, TIn data);
         Task ExecutePostHttpRequestAsync(string url);
         Task ExecutePostHttpRequestAsync<TIn>(string url, TIn content);
+        Task ExecutePutHttpRequestAsnyc<TIn>(string url, TIn data);
 
     }
 }

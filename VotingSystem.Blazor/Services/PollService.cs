@@ -41,5 +41,19 @@ namespace VotingSystem.Blazor.Services
                 return false;
             }
         }
+
+        public async Task<bool> UpdatePollAsync(int id, CreatePollViewModel viewModel)
+        {
+            try
+            {
+                var dto = _mapper.Map<PollRequestDTO>(viewModel);
+                await _http.ExecutePutHttpRequestAsnyc($"api/polls/{id}", dto);
+                return true;
+            }
+            catch (HttpRequestException ex)
+            {
+                throw new Exception("Failed to update poll", ex);
+            }
+        }
     }
 }

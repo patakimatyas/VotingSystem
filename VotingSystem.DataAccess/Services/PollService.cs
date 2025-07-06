@@ -39,6 +39,53 @@ namespace VotingSystem.DataAccess.Services
             await _context.SaveChangesAsync();
         }
 
+        public async Task UpdatePoll(string userId, int id, Poll poll)
+        {
+            if (id < 0)
+                throw new ArgumentOutOfRangeException(nameof(id), "Poll ID must be a positive integer.");
+            var existingPoll = await _context.Polls.FindAsync(id);
+            if (existingPoll == null)
+                throw new KeyNotFoundException($"Poll with ID {id} not found.");
+            if (userId != existingPoll.CreatedByUserId)
+                throw new UnauthorizedAccessException("You can only update polls you created.");
+
+            if (existingPoll.StartDate<= DateTime.UtcNow)
+            {
+                if (poll.EndDate <= existingPoll.EndDate)
+                {
+                    throw new ArgumentException("You can only longer the end date of a poll that has already started");
+                }
+            }
+            else
+            {
+                if (string.IsNullOrWhiteSpace(poll.Question))
+                    throw new ArgumentException("Poll question cannot be empty.");
+                existingPoll.Question = poll.Question;
+
+                if (poll.StartDate > poll.EndDate)
+                    throw new ArgumentException("Start date cannot be after end date.");
+                existingPoll.EndDate = poll.EndDate;
+                existingPoll.StartDate = poll.StartDate;
+
+                if (poll.Options == null || poll.Options.Count < 2)
+                    throw new ArgumentException("A poll must have at least 2 options.");
+
+                if (poll.Options.Any(o => string.IsNullOrWhiteSpace(o.Text)))
+                    throw new ArgumentException("Poll options must have text.");
+
+                _context.Options.RemoveRange(existingPoll.Options);
+                existingPoll.Options.Clear();
+                foreach (var newOption in poll.Options)
+                {
+                    existingPoll.Options.Add(newOption);
+                }
+
+
+            }
+            await _context.SaveChangesAsync();
+
+        }
+
         public async Task<List<Poll>> GetAllPollsAsync()
         {
             return await _context.Polls

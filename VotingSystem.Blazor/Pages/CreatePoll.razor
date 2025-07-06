@@ -36,7 +36,7 @@
     @foreach (var option in _model.Options)
     {
         <div class="form-group">
-                    <InputText @bind-Value="option.Text" @key="option.Id" data-testid="option-input" />
+                    <InputText @bind-Value="option.Text" @key="option.TempKey" data-testid="option-input" />
         </div>
     }
     <button type="button" class="option-button" data-testid="add-option" @onclick="AddOption">+ New option</button>

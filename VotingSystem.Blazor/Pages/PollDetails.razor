@@ -8,6 +8,10 @@
     {
         <div class="poll-card">
             <h2>@_poll.Question</h2>
+            @if (_poll.StartDate > DateTime.UtcNow)
+            {
+                <a href=@($"/polls/update/{_poll.Id}")>Edit</a>
+            }
 
             <p><strong>Start:</strong> @_poll.StartDate.ToShortDateString()</p>
             <p><strong>End:</strong> @_poll.EndDate.ToShortDateString()</p>

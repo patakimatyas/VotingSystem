@@ -6,6 +6,7 @@ namespace VotingSystem.DataAccess.Services
     public interface IPollService
     {
         Task CreatePollAsync(Poll poll);
+        Task UpdatePoll(string userId, int id, Poll poll);
         Task<List<Poll>> GetAllPollsAsync();
         Task<List<Poll>> GetActivePollsAsync();
         Task<Poll?> GetByIdAsync(int id);

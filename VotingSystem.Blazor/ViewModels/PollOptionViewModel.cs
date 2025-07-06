@@ -4,8 +4,12 @@ namespace VotingSystem.Blazor.ViewModels
 {
     public class PollOptionViewModel
     {
-        public Guid Id { get; set; } = new Guid();
+        public int? Id { get; set; }
+        
+        public Guid TempKey { get; set; } = new Guid();
 
         public string Text { get; set; } = string.Empty;
+
+
     }
 }

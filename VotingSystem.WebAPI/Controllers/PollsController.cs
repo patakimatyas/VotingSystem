@@ -234,7 +234,53 @@ namespace VotingSystem.WebAPI.Controllers
             }
         }
 
+        /// <summary>
+        /// Updates poll.
+        /// </summary>
+        /// <param name="dto">The question text and list of options.</param>
+        /// <param name="id">The id of the poll.</param>
+        /// <response code="200">Poll updated successfully.</response>
+        /// <response code="400">Bad request, e.g. model validation failed.</response>
+        /// <response code="401">If you are not authenticated.</response>
+        /// <response code="500">Unexpected server error.</response>
+        [HttpPut("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<IActionResult> UpdatePoll(int id, [FromBody] PollRequestDTO dto)
+        {
 
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            var userId = _userService.GetCurrentUserId();
+            Console.WriteLine(userId);
+            try
+            {
+                var poll = _mapper.Map<Poll>(dto);
+                await _pollService.UpdatePoll(userId!, id, poll);
+                return Ok();
+            }
+            catch (UnauthorizedAccessException)
+            {
+                return Forbid();
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+            catch (KeyNotFoundException)
+            {
+                return NotFound(new { message = $"Poll with ID {id} not found." });
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, "Internal server error");
+            }
+
+        }
 
     }
 }

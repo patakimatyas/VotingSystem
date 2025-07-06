@@ -70,6 +70,17 @@ namespace VotingSystem.Blazor.Infrastructure
             response.EnsureSuccessStatusCode();
         }
 
+        public async Task ExecutePutHttpRequestAsnyc<TIn>(string url, TIn data)
+        {
+            await AddAuthorizationHeaderAsync();
+            var response = await _httpClient.PutAsJsonAsync(url, data);
+            if (response.StatusCode == HttpStatusCode.Unauthorized)
+            {
+                await HandleUnauthorizedAsync();
+            }
+            response.EnsureSuccessStatusCode();
+        }
+
         public async Task ExecutePostHttpRequestAsync<TIn>(string url, TIn content)
         {
             await AddAuthorizationHeaderAsync();
