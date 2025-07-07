@@ -147,6 +147,19 @@ namespace VotingSystem.DataAccess.Services
                 .ToListAsync();
         }
 
+        public async Task DeletePoll(int id, string userId)
+        {
+            if (id <= 0)
+                throw new ArgumentOutOfRangeException(nameof(id), "Poll ID must be a positive integer.");
+            var poll = await _context.Polls.FindAsync(id);
+            if (poll == null)
+                throw new KeyNotFoundException($"Poll with ID {id} not found.");
+            if (poll.CreatedByUserId != userId)
+                throw new UnauthorizedAccessException("You can only delete polls you created.");
+            _context.Polls.Remove(poll);
+            await _context.SaveChangesAsync();
+        }
+
 
 
     }

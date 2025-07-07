@@ -55,5 +55,18 @@ namespace VotingSystem.Blazor.Services
                 throw new Exception("Failed to update poll", ex);
             }
         }
+
+        public async Task<bool> DeletePollAsync(int id)
+        {
+            try
+            {
+                await _http.ExecuteDeleteHttpRequestAsync($"api/polls/{id}");
+                return true;
+            }
+            catch (HttpRequestException ex)
+            {
+                throw new Exception("Failed to delete poll", ex);
+            }
+        }
     }
 }

@@ -7,6 +7,7 @@ namespace VotingSystem.DataAccess.Services
     {
         Task CreatePollAsync(Poll poll);
         Task UpdatePoll(string userId, int id, Poll poll);
+        Task DeletePoll(int id, string userId);
         Task<List<Poll>> GetAllPollsAsync();
         Task<List<Poll>> GetActivePollsAsync();
         Task<Poll?> GetByIdAsync(int id);

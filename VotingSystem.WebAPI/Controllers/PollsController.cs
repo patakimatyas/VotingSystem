@@ -282,5 +282,28 @@ namespace VotingSystem.WebAPI.Controllers
 
         }
 
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeletePoll(int id)
+        {
+            var userId = _userService.GetCurrentUserId();
+            try
+            {
+                await _pollService.DeletePoll(id, userId!);
+                return NoContent();
+            }
+            catch (UnauthorizedAccessException)
+            {
+                return Forbid();
+            }
+            catch (KeyNotFoundException)
+            {
+                return NotFound(new { message = $"Poll with ID {id} not found." });
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, "Internal server error");
+            }
+        }
+
     }
 }

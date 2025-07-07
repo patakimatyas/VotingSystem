@@ -105,3 +105,23 @@
         outline: none;
     }
 
+.delete-btn {
+    color: #fff;
+    background-color: #e74c3c;
+    font-weight: 600;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    transition: color 0.2s, box-shadow 0.2s;
+    border-radius: 4px;
+    padding: 5px 10px;
+    border: none;
+}
+
+    .delete-btn:hover,
+    .delete-btn:focus {
+        background-color: #c0392b;
+        box-shadow: 0 2px 8px 0 rgba(79,209,197,0.07);
+        outline: none;
+    }
+

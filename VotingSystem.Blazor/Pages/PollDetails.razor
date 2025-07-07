@@ -2,6 +2,8 @@
 @using VotingSystem.Blazor.ViewModels
 @using VotingSystem.Blazor.Services
 @inject IPollService PollService
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JS
 
 <div class="poll-details-page">
     @if (_poll is not null)
@@ -11,6 +13,7 @@
             @if (_poll.StartDate > DateTime.UtcNow)
             {
                 <a class="edit-link" href=@($"/polls/update/{_poll.Id}")>Edit</a>
+                <button class="delete-btn" @onclick="() => DeletePoll()">Delete</button>
             }
 
             <p><strong>Start:</strong> @_poll.StartDate.ToShortDateString()</p>
@@ -63,6 +66,27 @@
         if (!string.IsNullOrWhiteSpace(PollId))
         {
             _poll = await PollService.GetPollAsync(PollId);
+        }
+    }
+
+    private async Task DeletePoll()
+    {
+        if (_poll is null)
+            return;
+        try
+        {
+            await PollService.DeletePollAsync(_poll.Id);
+            await JS.InvokeVoidAsync("alert", "Poll deleted successfully.");
+            NavigationManager.NavigateTo("/polls");
+        }
+        catch (UnauthorizedAccessException)
+        {
+            await JS.InvokeVoidAsync("alert", "Session expired. Please login again.");
+            NavigationManager.NavigateTo("/login", forceLoad: true);
+        }
+        catch (HttpRequestException)
+        {
+            await JS.InvokeVoidAsync("alert", "Unexpected error while deleting the poll.");
         }
     }
 }

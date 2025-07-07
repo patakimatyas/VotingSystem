@@ -92,6 +92,18 @@ namespace VotingSystem.Blazor.Infrastructure
             response.EnsureSuccessStatusCode();
         }
 
+        public async Task ExecuteDeleteHttpRequestAsync(string url)
+        {
+            await AddAuthorizationHeaderAsync();
+            var response = await _httpClient.DeleteAsync(url);
+            if (response.StatusCode == HttpStatusCode.Unauthorized)
+            {
+                await HandleUnauthorizedAsync();
+            }
+            response.EnsureSuccessStatusCode(); 
+        }
+
+
         private async Task HandleUnauthorizedAsync()
         {
             await _localStorageService.RemoveItemAsync("AuthToken");
