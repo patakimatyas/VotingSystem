@@ -2,6 +2,7 @@
 @using VotingSystem.Blazor.ViewModels
 @using VotingSystem.Blazor.Services
 @inject IPollService PollService
+@inject ToastService ToastService
 @inject NavigationManager NavigationManager
 @inject IJSRuntime JS
 
@@ -76,17 +77,17 @@
         try
         {
             await PollService.DeletePollAsync(_poll.Id);
-            await JS.InvokeVoidAsync("alert", "Poll deleted successfully.");
+            ToastService.ShowSuccess("Poll deleted successfully.");
             NavigationManager.NavigateTo("/polls");
         }
         catch (UnauthorizedAccessException)
         {
-            await JS.InvokeVoidAsync("alert", "Session expired. Please login again.");
-            NavigationManager.NavigateTo("/login", forceLoad: true);
+            ToastService.ShowWarning("Session expired. Please login again.");
+            NavigationManager.NavigateTo("/login");
         }
         catch (HttpRequestException)
         {
-            await JS.InvokeVoidAsync("alert", "Unexpected error while deleting the poll.");
+            ToastService.ShowError("Failed to delete poll. Please try again later.");
         }
     }
 }

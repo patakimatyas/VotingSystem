@@ -1,0 +1,33 @@
+.mytoast {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    min-width: 220px;
+    z-index: 9999;
+    padding: 1rem 2rem;
+    border-radius: 11px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    opacity: 0.9;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.mytoast-success {
+    background: #28a745;
+}
+
+.mytoast-error {
+    background: #dc3545;
+}
+
+.mytoast-info {
+    background: #007bff;
+}
+
+.mytoast-warning {
+    background: #ffc107;
+    color: #212529;
+}

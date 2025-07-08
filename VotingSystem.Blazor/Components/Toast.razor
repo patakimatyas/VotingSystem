@@ -1,0 +1,42 @@
+﻿@inject ToastService ToastService
+
+@if (_visible)
+{
+    <div class="mytoast @ToastClass" @onclick="HideToast">
+        @_message
+    </div>
+}
+
+@code {
+    private string _message = "";
+    private bool _visible = false;
+    private ToastLevel _level;
+
+    private string ToastClass => _level switch
+    {
+        ToastLevel.Success => "mytoast-success",
+        ToastLevel.Error => "mytoast-error",
+        ToastLevel.Warning => "mytoast-warning",
+        _ => "mytoast-info"
+    };
+
+    protected override void OnInitialized()
+    {
+        ToastService.OnShow += ShowToast;
+    }
+
+    private async void ShowToast(string message, ToastLevel level)
+    {
+        _message = message;
+        _level = level;
+        _visible = true;
+        StateHasChanged();
+        await Task.Delay(2500);
+        _visible = false;
+        StateHasChanged();
+    }
+
+    private void HideToast() => _visible = false;
+
+    public void Dispose() => ToastService.OnShow -= ShowToast;
+}

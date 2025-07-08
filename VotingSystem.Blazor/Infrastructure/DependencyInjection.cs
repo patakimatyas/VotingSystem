@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Blazored.LocalStorage;
+using Blazored.Toast;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using VotingSystem.Blazor.Infrastructure;
@@ -19,12 +20,14 @@ namespace VotingSystem.Blazor
 
             services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<IPollService, PollService>();
+            services.AddSingleton<ToastService>();
 
             // AutoMapper profil
             services.AddAutoMapper(typeof(BlazorMappingProfile));
 
             // localStorage használata
             services.AddBlazoredLocalStorage();
+
 
             // auth state kezeléshez
             services.AddAuthorizationCore();

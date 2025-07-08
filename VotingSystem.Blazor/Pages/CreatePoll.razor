@@ -4,6 +4,7 @@
 @using VotingSystem.Blazor.Services
 @using VotingSystem.Blazor.Components
 @inject IPollService PollService
+@inject ToastService ToastService
 @inject NavigationManager NavigationManager
 @inject IJSRuntime JS
 
@@ -98,16 +99,17 @@
             try
             {
                 await PollService.CreatePollAsync(_model);
+                ToastService.ShowSuccess("Poll created successfully!");
                 NavigationManager.NavigateTo("/polls");
             }
             catch (UnauthorizedAccessException)
             {
-                await JS.InvokeVoidAsync("alert", "Session expired. Please login again.");
-                NavigationManager.NavigateTo("/login", forceLoad: true);
+                ToastService.ShowError("Session expired. Please login again.");
+                NavigationManager.NavigateTo("/login");
             }
             catch (HttpRequestException)
             {
-                await JS.InvokeVoidAsync("alert", "Unexpected error while creating the poll.");
+                ToastService.ShowError("Unexpected error while creating poll.");
             }
             
         }

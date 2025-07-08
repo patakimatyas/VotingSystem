@@ -1,6 +1,7 @@
 ﻿@namespace VotingSystem.Blazor.Components
 @using Blazored.LocalStorage
 @inject ILocalStorageService LocalStorage
+@inject ToastService ToastService
 @inject NavigationManager NavigationManager
 
 @code {
@@ -9,7 +10,8 @@
         var token = await LocalStorage.GetItemAsStringAsync("AuthToken");
         if (string.IsNullOrWhiteSpace(token))
         {
-            NavigationManager.NavigateTo("/login", forceLoad: true);
+            ToastService.ShowWarning("You are not authorized to view this page. Please log in!");
+            NavigationManager.NavigateTo("/login");
         }
     }
 }
