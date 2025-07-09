@@ -47,7 +47,7 @@ else
         }
         catch (UnauthorizedAccessException)
         {
-            ToastService.ShowWarning("You are not authorized to view this page. Please log in!");
+            ToastService.ShowInfo("You are not authorized to view this page. Please log in!");
             NavigationManager.NavigateTo("/login");
         }
         catch (HttpRequestException)

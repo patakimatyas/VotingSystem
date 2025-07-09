@@ -23,6 +23,7 @@ ul {
     text-align: left;
     transition: transform 0.2s ease;
     width: 100%;
+    min-width: 40rem;
 }
 
     li:hover {
@@ -72,4 +73,12 @@ p {
   font-size: 1rem;
   border: none;
   cursor: pointer;
+}
+
+.no-polls-msg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 300px;
 }

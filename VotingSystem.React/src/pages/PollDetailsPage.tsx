@@ -4,6 +4,9 @@ import { PollResponseDto } from "../api/models/PollResponseDto";
 import { getPollById } from "../api/client/polls-client";
 import { vote } from "../api/client/votes-client";
 import { useNavigate } from "react-router-dom";
+import { toast } from 'react-toastify';
+
+
 import '../PollDetailsPage.css';
 
 export default function PollDetailsPage() {
@@ -28,11 +31,10 @@ export default function PollDetailsPage() {
                 pollId: parseInt(id),
                 optionId: selectedOptionId!,
             });
-            alert("Thank you for voting!");
+            toast.success("Thank you for voting!");
             navigate("/polls/active");
         } catch (error) {
-            console.error("Voting failed:", error);
-            alert("Voting failed. Please try again.");
+            toast.error("Voting failed. Please try again.");
         }
     };
 

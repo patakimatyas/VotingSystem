@@ -8,9 +8,9 @@ export default function HomePage(){
     return(
         <div className="home-page">
             <h1>Welcome to VotingSystem</h1>
-            <p>Vote on open polls or check out the outcome of closed ones</p>
+            <p>Vote on open polls or check out the outcome of closed ones.</p>
             <div className="admin-section">
-            <p>Navigate to the admin app if you want to create polls too</p> 
+            <p>Navigate to the admin app if you want to create polls too.</p> 
             <button onClick={() => window.location.href = 'https://localhost:7044'} className="admin-page-btn">
                 VotingSystem.Admin
             </button>

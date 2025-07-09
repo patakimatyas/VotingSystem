@@ -11,14 +11,23 @@ export default function HomePage() {
     useEffect(() => {
         getActivePolls()
             .then(polls => {
-                // console.log(polls);
                 setPolls(polls);
             })
             .catch(console.error);
     }, []);
+    if(polls.length == 0){
+        return(
+            <div className="no-polls-msg">
+            <p>No polls are active at the moment. Create some! </p>
+             <button onClick={() => window.location.href = 'https://localhost:7044'} className="admin-page-btn">
+                VotingSystem.Admin
+            </button>
+            </div>
+        )
+    }else{
 
-    return (
-        <div className="active-polls-page">
+        return (
+            <div className="active-polls-page">
             <h1>Active polls</h1>
             <ul>
                 {polls.map((poll) => (
@@ -36,4 +45,5 @@ export default function HomePage() {
             </ul>
         </div>
     );
+}
 }

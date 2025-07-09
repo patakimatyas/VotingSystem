@@ -8,6 +8,8 @@ import LoginPage from "./pages/LoginPage";
 import ProtectedRoute from "./context/ProtectedRoute";
 import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
+import {ToastContainer} from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
@@ -23,6 +25,7 @@ function App() {
                 <Route path="/users/register" element={<RegisterPage />} />
                 <Route path="/users/login" element={<LoginPage />} />
             </Routes>
+            <ToastContainer position="bottom-right" autoClose={2500} />
         </BrowserRouter>
     );
 }

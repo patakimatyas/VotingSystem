@@ -10,7 +10,7 @@
         var token = await LocalStorage.GetItemAsStringAsync("AuthToken");
         if (string.IsNullOrWhiteSpace(token))
         {
-            ToastService.ShowWarning("You are not authorized to view this page. Please log in!");
+            ToastService.ShowInfo("You are not authorized to view this page. Please log in!");
             NavigationManager.NavigateTo("/login");
         }
     }
