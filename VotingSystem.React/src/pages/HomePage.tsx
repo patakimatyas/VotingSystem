@@ -7,7 +7,7 @@ export default function HomePage(){
 
     return(
         <div className="home-page">
-            <h1>Welcome to VotingSystem</h1>
+            <h1>Welcome to <br/><span className='brand'>VotingSystem.Client</span></h1>
             <p>Vote on open polls or check out the outcome of closed ones.</p>
             <div className="admin-section">
             <p>Navigate to the admin app if you want to create polls too.</p> 
