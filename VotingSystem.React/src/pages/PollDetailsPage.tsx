@@ -54,8 +54,8 @@ export default function PollDetailsPage() {
                             onChange={() => setSelectedOptionId(option.id)}
                             disabled={poll.hasVoted}
                         />
-                        <span>{option.text}
-                              {poll.votedOptionId === option.id && " ✅"}
+                        <span>
+                            {option.text}
                         </span>
                     </label>
                 ))}
@@ -65,7 +65,7 @@ export default function PollDetailsPage() {
                     onClick={handleVote}
                     disabled={poll.hasVoted || !selectedOptionId}
                 >
-                    {poll.hasVoted ? "You already voted" : "Vote"}
+                    {poll.hasVoted ? "You already voted ✅" : "Vote"}
                 </button>
             </form>
         </div>

@@ -8,5 +8,4 @@ export interface PollResponseDto {
     endDate: string;
     options: OptionResponseDto[];
     hasVoted: boolean;
-    votedOptionId: number | null;
 }

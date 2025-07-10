@@ -26,7 +26,7 @@ export default function Navbar() {
             <Link to="/polls/active" className="nav-link">Active</Link>
             <Link to="/polls/closed" className="nav-link">Closed</Link>
             </div>
-            
+
             <div className="nav-right">
                 {user ? (
                     <button className="logout-button" onClick={handleLogout}>Logout</button>
